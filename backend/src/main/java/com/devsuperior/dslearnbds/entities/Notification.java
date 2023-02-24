@@ -18,6 +18,9 @@ public class Notification implements Serializable {
     private boolean read = false;
     private String route;
 
+    @ManyToOne
+    private User user;
+
     public Notification() {
 
     }
